@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 #from selenium.webdriver.support.ui import WebDriverWait
 #import users
 
-
 # Page opjects are written in this module.
 # Depends on the page functionality we can have more functions for new classes
 
