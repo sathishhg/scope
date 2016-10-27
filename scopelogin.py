@@ -31,7 +31,6 @@ class Login(unittest.TestCase):
 
         # Enter the details for the Household
 
-
         driver.find_element_by_xpath(".//*[@id='id_household-name']").send_keys("Farooqs")
 
         driver.find_element_by_xpath(".//*[@id='main-form']/div[3]/div/span[1]/span[1]/span").click()
