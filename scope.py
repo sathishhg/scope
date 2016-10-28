@@ -107,7 +107,31 @@ class scopeLogin(unittest.TestCase):
 
         driver.find_element_by_xpath(locators['saveChanges1']).click()
 
+            def create_intervention(self):
+        driver = self.driver
+        driver.findElement(By.id("id_name")).sendKeys("TestNewWallets");
+        driver.findElement(By.id("id_short_description")).clear();
+        driver.findElement(By.id("id_short_description")).sendKeys("TEst");
+        driver.findElement(By.id("id_short_description")).clear();
+        driver.findElement(By.id("id_short_description")).sendKeys("Test");
+        new Select(driver.findElement(By.id("id_activity"))).selectByVisibleText("Cash-Assistance for Flood Victims");
+        driver.findElement(By.id("id_end_date")).clear();
+        driver.findElement(By.id("id_end_date")).sendKeys("201-05-12");
+        driver.findElement(By.id("id_conditionality")).click();
+        driver.findElement(By.id("id_end_date")).clear();
+        driver.findElement(By.id("id_end_date")).sendKeys("2015-05-20");
+        driver.findElement(By.id("id_allowed_delegates")).clear();
+        driver.findElement(By.id("id_allowed_delegates")).sendKeys("1");
 
+        
+        new Select(driver.findElement(By.id("id_default_beneficiary_group"))).selectByVisibleText("Beneficiaries");
+        new Select(driver.findElement(By.id("id_delivery_mechanism"))).selectByVisibleText(
+            "TestDeliveryMechanism | Bank account");
+        
+        driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+        driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+        driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+        driver.findElement(By.linkText("Add new intervention")).click();
 
         def tearDown(self):
             self.driver.close()
