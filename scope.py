@@ -30,7 +30,6 @@ hh_location = "mi"
 hh_count ="1"
 hh_memberDOB = "1986-10-12"
 
-
 locators = {
             #login locatore
             'usernameTxtBox' : "//*[@id='id_username']",
