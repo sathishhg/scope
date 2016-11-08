@@ -124,37 +124,37 @@ class scopeLogin(unittest.TestCase):
     #def register_household(self):
        # driver = self.driver
         driver.find_element_by_id(locators['office']).click()
-        # driver.find_element_by_xpath(locators['houseHolds']).click()
-        # time.sleep(5)
-        # driver.find_element_by_xpath(locators['activeHouseholds']).click()
-        # time.sleep(5)
-        # driver.find_element_by_xpath(locators['addNewHousehold']).click()
-        # driver.implicitly_wait(5)
-        # driver.find_element_by_xpath(locators['newHouseholdName']).send_keys(hh_name)
-        # driver.find_element_by_xpath(locators['location1']).click()
-        #
-        # driver.find_element_by_xpath(locators['location2']).send_keys(hh_location)
-        #
-        # driver.find_element_by_xpath(locators['location3']).click()
-        # driver.find_element_by_xpath(locators['hhCount']).send_keys(hh_count)
-        #
-        # #driver.find_element_by_xpath(".//*[@id='id_last_name']").send_keys("Benja")
-        #
-        # driver.find_element_by_xpath(locators['exact_DOB']).click()
-        #
-        # driver.find_element_by_id(locators['hhMemberDOB']).send_keys(hh_memberDOB)
-        # driver.implicitly_wait(8)
-        # driver.find_element_by_id("id_date_of_birth").send_keys(Keys.TAB)
-        # driver.implicitly_wait(10)
-        #
-        # driver.find_element_by_xpath(locators['saveChanges']).click()
-        #
-        # driver.find_element_by_xpath(locators['saveChanges1']).click()
-        #
-        # time.sleep(10)
+         driver.find_element_by_xpath(locators['houseHolds']).click()
+         time.sleep(5)
+         driver.find_element_by_xpath(locators['activeHouseholds']).click()
+         time.sleep(5)
+         driver.find_element_by_xpath(locators['addNewHousehold']).click()
+         driver.implicitly_wait(5)
+         driver.find_element_by_xpath(locators['newHouseholdName']).send_keys(hh_name)
+         driver.find_element_by_xpath(locators['location1']).click()
+        
+         driver.find_element_by_xpath(locators['location2']).send_keys(hh_location)
+        
+         driver.find_element_by_xpath(locators['location3']).click()
+         driver.find_element_by_xpath(locators['hhCount']).send_keys(hh_count)
+        
+         #driver.find_element_by_xpath(".//*[@id='id_last_name']").send_keys("Benja")
+        
+         driver.find_element_by_xpath(locators['exact_DOB']).click()
+        
+         driver.find_element_by_id(locators['hhMemberDOB']).send_keys(hh_memberDOB)
+         driver.implicitly_wait(8)
+         driver.find_element_by_id("id_date_of_birth").send_keys(Keys.TAB)
+         driver.implicitly_wait(10)
+        
+         driver.find_element_by_xpath(locators['saveChanges']).click()
+        
+         driver.find_element_by_xpath(locators['saveChanges1']).click()
+        
+         time.sleep(10)
 
-    #def addNewIntervention(self):
-       # driver = self.driver
+    def addNewIntervention(self):
+        driver = self.driver
         driver.find_element_by_xpath(locators['Projects']).click()
         driver.find_element_by_xpath(locators['Project']).click()
         driver.find_element_by_xpath(locators['NewIntervention']).click()
