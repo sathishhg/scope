@@ -185,6 +185,7 @@ class scopeLogin(unittest.TestCase):
         #driver.find_element_by_css_selector("input.btn.btn-primary").click()
        # driver.findElement(By.linkText("")).click()
 
+            
         def tearDown(self):
             self.driver.close()
 
