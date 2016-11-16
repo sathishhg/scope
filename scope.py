@@ -25,6 +25,7 @@ s_password = "sathisha"
 
 # Input data for New Household registration
 
+
 hh_name= "Fazals1"
 hh_location = "mi"
 hh_count = "1"
